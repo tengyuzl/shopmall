@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title><th:block th:text="#{mall.title}" /></title>
+</head>
+
+<body>
+订单页面(<th:block th:text="${goodstype.name}" />)
+<hr>
+
+ 订单信息
+ 
+ <table>
+ 	<tr>
+ 		<td th:text="${goodstype.name}"></td> 
+ 		<td th:text="${goods.name}"></td>
+ 	</tr>
+ 	<tr>
+ 		<td colspan="2">费用：<th:block th:text="${goods.price}" /> <th:block th:text="${goods.priceUnit}" /></td>
+ 	</tr>
+ </table>
+ 上传数据：<th:block th:text="${order.file01}" /><br>
+ 			<th:block th:text="${order.file25}" /><br>
+ <hr>
+ <form id="loginForm"  th:action="@{'/order/pay/'+${order.orderNo}}" method="post">
+ 选择付款方式<br>
+ <label><input name="payType" type="radio" value="2" checked="checked"/>账户余额 </label><br>
+ <label><input name="payType" type="radio" value="1" />银行卡（信用卡支付） </label><br>
+ <input type="hidden" name="commodityName" th:value="${goodstype.name} + ' ' + ${goods.name}">
+ <input class="submit" type="submit"  th:value="#{login.form.button}">
+ </form>
+</body>
+</html>

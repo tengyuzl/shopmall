@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title><th:block th:text="#{mall.title}" /></title>
+</head>
+<body>
+	<span style="color: red" th:if="${errorType == '0'}" th:text="#{login.error.upwd}"></span>
+	<span style="color: red" th:if="${errorType == '1'}" th:text="#{login.error.vcode}"></span>
+	<span style="color: red" th:if="${errorType == '2'}" th:text="#{login.error.nullname}"></span>
+	<span style="color: red" th:if="${errorType == '3'}" th:text="#{login.error.nullpwd}"></span>
+	<span style="color: red" th:if="${errorType == '4'}" th:text="#{login.error.nullvocde}"></span>
+	<span style="color: red" th:if="${errorType == '5'}" th:text="#{login.error.erroruser}"></span>
+	<span style="color: red" th:if="${errorType == '6'}" th:text="#{login.error.adminuser}"></span>
+	<hr>
+<div class="form center">
+
+    		<form id="loginForm"  action="/login" method="post">
+                <div class="login_main center">
+                    <div class="login-info"><span th:text="#{login.form.username}"></span>:&nbsp;<input class="login-info-input" type="text" name="uname"
+                                                             id="uname"/>
+                    </div>
+                    <div class="login-info"><span th:text="#{login.form.upwd}"></span>:&nbsp;<input class="login-info-input"
+                                                                                    id="upwd"
+                                                                                    type="password"
+                                                                                    name="upwd"/></div>
+                    <div class="login-info">
+                        	<span th:text="#{login.form.vcode}"></span>:&nbsp;
+                        <input class="login-info-input verify-code" type="text" name="verifyCode"
+                                id="verifyCode"/>
+                        <img alt="#{login.form.username}" style="top: 14px;position: relative;" th:src="@{/kaptcha}"
+                             onclick="this.src='/kaptcha?d='+new Date()*1">
+                    </div>
+                </div>
+                <div class="login_submit">
+                    <input class="submit" type="submit"  th:value="#{login.form.button}">
+                </div>
+            </form>
+            
+</div>
+</body>
+</html>

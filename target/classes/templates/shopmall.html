@@ -1,0 +1,290 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet" href="/assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="/assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+
+</head>
+
+<body>
+    <!-- =================
+    Header Area Start 
+    =====================-->
+    <div class="header-area">
+        <!-- Header Top Start -->
+        <div class="header-top full-border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="header-top-left">
+                            <p>
+                            <span class="input-group-text" th:text="#{login.error.upwd}"></span>
+							<span class="input-group-text" th:text="#{login.error.vcode}"></span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="box-right">
+                            <ul>
+                                <li class="settings">
+                                    <a href="#" class="drop-toggle">
+                                        <span>联系我们</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <ul class="box-dropdown drop-dropdown">
+                                        <li><a href="#">facebook</a></li>
+                                        <li><a href="#">wechat</a></li>
+										<li><a href="#">email</a></li>
+                                    </ul>
+                                </li>
+                                <li class="settings">
+                                    <a href="#" class="drop-toggle">
+                                        <img src="assets/images/cuntry/cn.gif" alt="">
+                                        中文
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <ul class="box-dropdown drop-dropdown">
+                                        <li>
+                                            <a href="?lang=zh_CN" ><img src="assets/images/cuntry/cn.gif" alt=""> 中文</a>
+                                        </li>
+                                        <li>
+                                            <a href="?lang=en_US"><img src="assets/images/cuntry/2.jpg" alt=""> English</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="settings">
+                                    <a href="#" class="drop-toggle">
+                                        我的账户
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <ul class="box-dropdown drop-dropdown">
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="#">Sign In</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Top End -->
+        <!-- Header Middle Start -->
+        <div class="header-middle space-40">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-6">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo/pos-circle-logo.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-6">
+                        <div class="header-middle-inner">
+                            <div class="search-container">
+                            </div>
+                            <div class="blockcart">
+                                <a href="#" class="drop-toggle">
+                                    <img src="assets/images/cart/cart.png" alt="" class="img-fluid">
+                                    <span class="my-cart">我的订单</span>
+                                    <span class="count">2</span>
+                                </a>
+                                <div class="cart-dropdown drop-dropdown">
+                                    <ul>
+                                        <li class="mini-cart-details">
+                                            <div class="innr-crt-img">
+                                                <img src="assets/images/cart/ear-headphones.jpg" alt="">
+                                                <span>1x</span>
+                                            </div>
+                                            <div class="innr-crt-content">
+                                                <span class="product-name">
+                                                <a href="#">SonicFuel Wireless Over-Ear Headphones </a>
+                                            </span>
+                                                <span class="product-price">$32.30</span>
+                                                <span class="product-size">Size:  S</span>
+                                            </div>
+                                        </li>
+                                        <li class="mini-cart-details mb-30">
+                                            <div class="innr-crt-img">
+                                                <img src="assets/images/cart/720-degree-cameras-dual.jpg" alt="">
+                                                <span>1x</span>
+                                            </div>
+                                            <div class="innr-crt-content">
+                                                <span class="product-name">
+                                                <a href="#">720 Degree Panoramic HD 360.. </a>
+                                            </span>
+                                                <span class="product-price">$29.00</span>
+                                                <span class="product-size">Dimension:  40cm X 60cm</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="subtotal-text">Subtotal</span>
+                                            <span class="subtotal-price">$61.30</span>
+                                        </li>
+                                        <li>
+                                            <span class="subtotal-text">Shipping</span>
+                                            <span class="subtotal-price">$40.20</span>
+                                        </li>
+                                        <li>
+                                            <span class="subtotal-text">Taxes</span>
+                                            <span class="subtotal-price">$10.07</span>
+                                        </li>
+                                        <li>
+                                            <span class="subtotal-text">Total</span>
+                                            <span class="subtotal-price">$111.57</span>
+                                        </li>
+                                    </ul>
+                                    <div class="checkout-cart">
+                                        <a href="checkout.html">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Middle End -->
+        <!-- Header Bottom Start -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <!-- Category Menu Start -->
+                        <div class="categoryes-menu-bar" >
+                            <nav class="categorye-menus category-dropdown">
+							<div class="categoryes-menu-btn ">
+                                <div class="float-left">
+                                    <a href="#">我的服务</a>
+                                </div>
+                            </div>
+                            <ul class="categories-expand" >
+                                    <li class="categories-hover-right">
+                                        <a href="#">计算机数据服务<i class="fa fa-angle-right float-right"></i></a>
+                                        <ul class="cat-submenu category-mega">
+                                            <li class="cat-mega-title"><a href="#">大众</a>
+                                                <ul>
+                                                    <li><a href="#">宝马</a></li>
+                                                    <li><a href="#">奔驰</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="cat-mega-title"><a href="#">奔驰</a>
+                                                <ul>
+                                                    <li><a href="#">宝马</a></li>
+                                                    <li><a href="#">奔驰</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="cat-mega-title"><a href="#">宝马</a>
+                                                <ul>
+                                                    <li><a href="#">宝马</a></li>
+                                                    <li><a href="#">奔驰</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <th:block th:each="goodsType : ${goodsTypeList}">
+	                                    <li class="categories-hover-right">
+	                                        <a href="#"><th:block th:text="${goodsType.name}"></th:block><i class="fa fa-angle-right float-right"></i></a>
+	                                        <ul class="cat-submenu category-mega">
+	                                        <th:block th:each="childGoodsType : ${goodsType.goodsTypeList}">
+	                                        	<li class="cat-mega-title"><a href="#"><th:block th:text="${childGoodsType.name}"></th:block></a>
+	                                                <ul>
+	                                                	<th:block th:each="goods : ${childGoodsType.goodsList}">
+	                                                    <li><a th:href="@{'/order/tocreate/'+${goods.id}}"><th:block th:text="${goods.name}"></th:block></a></li>
+	                                                    </th:block>
+	                                                </ul>
+	                                            </li>
+	                                        </th:block>
+	                                        </ul>
+	                                    </li>
+	                            	</th:block>
+                             </ul>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <div class="slider_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-9">
+                    <div class="slider_area slider-one">
+                        <!-- Single Slider Start -->
+                        <div class="single_slider">
+                            <img src="assets/images/slider/slider-1.png" alt="" class="img-fluid">
+                            <div class="slider_content color_one">
+                                <h5>The Hottest <br> Trend</h5>
+                                    <h2>Laptop <br> Tablets Outlet</h2>
+                                        <div class="pt-des">
+                                            <p><span>25%</span>Starting at <span>$340.00</span></p>
+                                        </div>
+                                        <a href="shop.html">Shop Now</a>
+                            </div>
+                        </div>
+                        <div class="single_slider">
+                            <img src="assets/images/slider/slider-2.png" alt="" class="img-fluid">
+                            <div class="slider_content color_two">
+                                <h5>The Hottest <br> Trend</h5>
+                                    <h2>Cellphone <br> Smartphone Not 2</h2>
+                                        <div class="pt-des">
+                                            <p><span>35%</span>Starting at <span>$120.00</span></p>
+                                        </div>
+                                        <a href="shop.html">Shop Now</a>
+                            </div>
+                        </div>
+                        <!-- Single Slider End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="newsletter-group">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="newsletter-inner d-flex align-items-center">
+                            <i class="fa fa-envelope-open-o"></i>
+                            <div class="newsletter-title">
+                                <h1 class="sign-title">留言版</h1>
+                                <p>留下你最珍贵的建议，提供最贴心的服务</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="newsletter-box">
+                            <form id="mc-form" class="mc-form">
+                                <input type="email" id="mc-email" class="email-box" placeholder="请留言" name="EMAIL">
+                                <button id="mc-submit" class="newsletter-btn" type="submit">提交</button>
+                            </form>
+                            <!-- mailchimp-alerts Start -->
+                            <div class="mailchimp-alerts text-centre">
+                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                <div class="mailchimp-success text-success"></div><!-- mailchimp-success end -->
+                                <div class="mailchimp-error text-danger"></div><!-- mailchimp-error end -->
+                            </div><!-- mailchimp-alerts end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/vendor/vendor.min.js"></script>
+    <script src="/assets/js/plugins/plugins.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title><th:block th:text="#{mall.title}" /></title>
+</head>
+
+<body>
+订单页面(<th:block th:text="${goodstype.name}" />)
+<br>
+<form id="loginForm"  th:action="@{/order/create}" method="post" enctype="multipart/form-data">
+上传数据 <input type="file" name="file01">
+ <input type="file" name="file25">
+ <br>
+ 订单信息
+ 
+ <table>
+ 	<tr>
+ 		<td th:text="${goodstype.name}"></td> 
+ 		<td th:text="${goods.name}"></td>
+ 	</tr>
+ 	<tr>
+ 		<td colspan="2">费用：<th:block th:text="${goods.price}" /> <th:block th:text="${goods.priceUnit}" /></td>
+ 	</tr>
+ </table>
+ <input type="hidden" name="goodsId" th:value="${goods.id}">
+ <input class="submit" type="submit"  th:value="#{login.form.button}">
+ </form>
+</body>
+</html>

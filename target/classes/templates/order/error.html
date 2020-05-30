@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title><th:block th:text="#{mall.title}" /></title>
+</head>
+
+<body>
+	<span style="color: red" th:if="${errorType == '0'}" th:text="#{order.create.error.notgoods}"></span>
+	<span style="color: red" th:if="${errorType == '1'}" th:text="#{order.create.error.vipgoods}"></span>
+	<span style="color: red" th:if="${errorType == '2'}" th:text="#{order.create.error.filefail}"></span>
+	<span style="color: red" th:if="${errorType == '3'}" th:text="#{order.create.error.sqlfail}"></span>
+</body>
+</html>

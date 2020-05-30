@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title><th:block th:text="#{mall.title}" /></title>
+</head>
+
+<body>
+<th:block th:text="#{order.list}" />:
+<hr>
+	<table border="1">
+		<tr>
+		<th th:text="#{order.list.td1}"></th>
+		<th th:text="#{order.list.td2}"></th>
+		<th th:text="#{order.list.td3}"></th>
+		<th th:text="#{order.list.td4}"></th>
+		<th th:text="#{order.list.td5}"></th>
+		<th th:text="#{order.list.td6}"></th>
+		<th th:text="#{order.list.td7}"></th>
+		<th th:text="#{order.list.td8}"></th>
+		<th th:text="#{order.list.td9}"></th>
+		</tr>
+		<th:block th:each="order : ${orderList}">
+		<tr>
+			<td th:text="${order.orderNo}"></td>
+			<td th:text="${order.goodsName}"></td>
+			<td th:text="${order.goodsNum}"></td>
+			<td th:text="${order.totalPrice}"></td>
+			<td th:text="${order.file01}"></td>
+			<td th:text="${order.file25}"></td>
+			<td th:text="${order.payType}"></td>
+			<td th:text="${order.paytime}"></td>
+			<td th:text="${order.orderStatus}"></td>
+		</tr>
+		</th:block>
+	</table>
+</body>
+</html>
